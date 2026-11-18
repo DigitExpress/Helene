@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digit’Express — Rapide et efficace, multiservices</title>
+<meta name="description" content="Digit’Express : bureautique, assistance informatique et communication visuelle. Vos idées prennent vie !">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Digit'Express.css">
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="logo" href="#top"><img class="logo-img" src="logo.png" alt="Logo Digit’Express">Digit’<b>Express</b></a>
+  <nav><a href="#services">Services</a><a href="#commande">Commander</a><a href="#apropos">À propos</a><a href="#comment">Comment ça marche</a><a href="#contact">Contact</a></nav>
+  <button class="cartbtn" id="openCart">🛒 Panier <span id="cnt">0</span></button>
+</div></header>
+
+<section class="hero" id="top">
+  <i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i>
+  <div class="wrap hero-in">
+    <div>
+      <span class="tag">⚡ Rapide et efficace, multiservices</span>
+      <h1>Digit’<span class="grad">Express</span></h1>
+      <h2>Vos idées prennent vie !</h2>
+      <p>Bienvenue chez Digit’Express, votre partenaire en bureautique, assistance informatique et communication visuelle.</p>
+      <a class="btn" href="#services">Découvrir nos services</a>
+      <a class="btn ghost" href="#commande">Commander maintenant</a>
+    </div>
+    <div class="float">
+      <div class="fc c1">🎨 Logo & flyers</div><div class="fc c2">🖨️ Impression</div>
+      <div class="fc c3">💻 Assistance PC</div><div class="fc c4">📄 CV & dossiers</div>
+    </div>
+  </div>
+</section>
+
+<section id="services"><div class="wrap">
+  <h2 class="title">Nos <span class="grad2">services</span></h2>
+  <p class="sub">Ajoutez vos services au panier, puis remplissez le formulaire plus bas.</p>
+  <div class="filters" id="filters"></div>
+  <div class="grid" id="grid"></div>
+  <p class="note">Prix indicatifs en FCFA : le prix et le délai définitifs sont confirmés avec vous avant de commencer.</p>
+</div></section>
+
+<section id="commande" class="soft"><div class="wrap">
+  <h2 class="title">Passer <span class="grad2">commande</span></h2>
+  <p class="sub">Votre panier et le formulaire sont connectés : tout se confirme ici.</p>
+  <div class="co">
+    <form id="orderForm" class="formcard" novalidate>
+      <div class="fh"><b>1</b> Vos coordonnées</div>
+      <div class="two">
+        <div><label for="f_nom">Nom complet *</label><input id="f_nom" autocomplete="name" placeholder="Ex : Awa Ndiaye"><div class="em"></div></div>
+        <div><label for="f_tel">Téléphone / WhatsApp *</label><input id="f_tel" type="tel" autocomplete="tel" placeholder="Ex : 77 000 00 00"><div class="em"></div></div>
+      </div>
+      <label for="f_mail">E-mail (facultatif)</label><input id="f_mail" type="email" placeholder="exemple@mail.com"><div class="em"></div>
+      <div class="two">
+        <div><label for="f_mode">Réception</label><select id="f_mode"><option>Retrait sur place</option><option>Livraison (si disponible)</option></select></div>
+        <div><label for="f_adr">Ville / Adresse</label><input id="f_adr" placeholder="Ex : Dakar, Médina"></div>
+      </div>
+      <label for="f_note">Détails de votre projet</label><textarea id="f_note" rows="3" placeholder="Délai souhaité, couleurs, texte à utiliser…"></textarea>
+      <div class="fh" style="margin-top:22px"><b>2</b> Mode de paiement</div>
+      <div class="pays">
+        <label class="pay wave sel"><input type="radio" name="pay" value="Wave" checked><span class="dot">W</span>Wave<small>Paiement mobile</small></label>
+        <label class="pay om"><input type="radio" name="pay" value="Orange Money"><span class="dot">OM</span>Orange Money<small>Paiement mobile</small></label>
+      </div>
+    </form>
+    <aside class="sum">
+      <div class="fh"><b>3</b> Votre panier</div>
+      <div id="sumBody"></div>
+      <div class="tot"><span>Total</span><span id="sumTot">0 FCFA</span></div>
+      <button class="btn full" id="confirm" type="button">✅ Confirmer la commande</button>
+      <p class="mini">🔒 Le prix définitif et le délai vous sont confirmés avant le début du travail.</p>
+    </aside>
+  </div>
+</div></section>
+
+<section id="apropos"><div class="wrap about">
+  <div>
+    <h2 class="title" style="text-align:left">À <span class="grad2">propos</span></h2>
+    <p>Nous accompagnons les particuliers, les étudiants, les entrepreneurs et les professionnels en leur proposant des solutions adaptées à leurs besoins, un travail soigné et un service rapide et efficace.</p>
+    <p>Je m’appelle <b>Hélène Diatta</b>, fondatrice de Digit’Express. Diplômée en marketing et communication, en bureautique, en informatique et en maintenance, je mets mes compétences au service de vos projets.</p>
+    <p>Mon ambition est de vous accompagner avec sérieux, créativité et professionnalisme, afin de vous aider à valoriser vos idées et à atteindre vos objectifs.</p>
+  </div>
+  <div class="box"><div class="big">✨</div><b>Des solutions pratiques</b><br>pour donner vie à vos projets.</div>
+</div></section>
+
+<section id="comment" class="soft"><div class="wrap">
+  <h2 class="title">Comment ça <span class="grad2">marche</span> ?</h2><p class="sub">Cinq étapes simples</p>
+  <div class="steps">
+    <div class="step">Vous nous contactez et nous expliquez votre besoin.</div>
+    <div class="step">Nous étudions votre demande et vous proposons une solution adaptée.</div>
+    <div class="step">Nous confirmons le prix et le délai avant de commencer.</div>
+    <div class="step">Nous réalisons votre commande avec soin.</div>
+    <div class="step">Vous récupérez votre commande ou convenons ensemble des modalités de livraison, si ce service est disponible.</div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="contact">
+  <h2>Vous avez un projet ?</h2>
+  <p>Contactez Digit’Express pour demander un renseignement ou un devis.</p>
+  <p class="phone">📞 Téléphone / WhatsApp : 71 156 95 24</p>
+  <a class="btn" href="tel:+221711569524">Appeler</a>
+  <a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/221711569524?text=Bonjour%20Digit%E2%80%99Express%2C%20j%E2%80%99ai%20un%20projet.">WhatsApp</a>
+</div></div></section>
+
+<footer>Digit’Express — Des solutions pratiques pour donner vie à vos projets.</footer>
+
+<div class="ov" id="cartOv"><div class="panel">
+  <button class="x" data-close="cartOv">✕</button>
+  <h2>🛒 Votre panier</h2><div id="cartBody"></div>
+</div></div>
+
+<div class="ov center" id="okOv"><div class="modal ok">
+  <div class="tick">✓</div><h2>Commande confirmée !</h2>
+  <p>Merci <b id="okNom"></b> 🎉</p><div class="ref" id="okRef"></div>
+  <div class="instr" id="okInstr"></div>
+  <p class="mini" id="okMail"></p>
+  <a class="btn full wa" id="okWa" target="_blank" rel="noopener">📲 Envoyer ma commande sur WhatsApp</a>
+  <button class="btn full soft2" id="okClose" type="button">Retour au site</button>
+</div></div>
+<div class="toast" id="toast"></div>
+<script src="Digit'Express.js" defer></script>>
+</body>
+</html>
